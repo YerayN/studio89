@@ -819,4 +819,15 @@ footer p {
     .servicio-texto {
         padding: 0;
     }
+
+    /* Ajustes del visor VR para móvil */
+    .vr-texto h2 {
+        font-size: 2rem !important;
+    }
+    
+    .vr-marco {
+        height: 350px; /* Un poco más bajito para que se vea el texto en móvil */
+        border-width: 4px; /* Marco más fino */
+        border-radius: 10px;
+    }
 }
