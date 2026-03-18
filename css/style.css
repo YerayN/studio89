@@ -82,7 +82,7 @@ nav {
 }
 
 .logo-img {
-    max-height: 45px;
+    max-height: 55px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -246,8 +246,36 @@ nav {
     height: 100%;
 }
 
+/* --- ESTILOS PARA LA ILUSTRACIÓN DE LAS GAFAS VR --- */
+.vr-gafas-ilustracion {
+    text-align: center;
+    margin-top: -100px; /* Truco pro: sube la imagen un poco para que parezca que está apoyada o cerca del marco */
+    position: relative;
+    z-index: 5; /* Asegura que se vea por encima de todo */
+}
+
+.vr-gafas-ilustracion img {
+    max-width: 400px; /* Tamaño ideal para que no robe todo el protagonismo */
+    height: auto;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15)); /* Le da un efecto 3D muy realista */
+    transition: var(--transition-suave);
+}
+
+/* Pequeña animación: cuando el usuario pase el ratón, las gafas flotan un poco */
+.vr-gafas-ilustracion img:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+.pie-foto-vr {
+    font-size: 1.1rem;
+    color: var(--color-terracotta);
+    margin-top: 10px;
+    font-weight: 600;
+    font-style: italic;
+}
+
 .servicios-resumen {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .grid-servicios {
