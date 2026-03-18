@@ -4,6 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio 89 | Diseño Interior Holístico</title>
@@ -46,10 +48,15 @@
         </div>
     </section>
 
-    <section class="tecnologia">
-        <div class="contenedor">
-            <h2>La tecnología al servicio de tu bienestar: VR e IA en tu cocina.</h2>
-            <p>En Studio 89, creemos que ver no es suficiente; necesitas sentir. Utilizamos la Inteligencia Artificial para optimizar la funcionalidad de tu cocina y la Realidad Virtual para que puedas "caminar" por ella. Eliminamos la incertidumbre garantizando que el resultado final sea perfecto para tu salud emocional.</p>
+    <section class="tecnologia-vr contenedor">
+        <div class="vr-texto text-center">
+            <span class="etiqueta">Nuestra Revolución</span>
+            <h2>Camina por tu cocina antes de construirla</h2>
+            <p>No te conformes con planos aburridos. Gracias a nuestra integración de Realidad Virtual, puedes sumergirte en tu futuro hogar. Haz la prueba: <strong>haz clic y arrastra</strong> sobre la imagen inferior para mirar a tu alrededor.</p>
+        </div>
+
+        <div class="vr-marco">
+            <div id="visor-360"></div>
         </div>
     </section>
 
@@ -94,5 +101,16 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        if(document.getElementById('visor-360')) {
+            pannellum.viewer('visor-360', {
+                "type": "equirectangular",
+                "panorama": "assets/img/cocina-360.jpg", /* Aquí pondremos la foto de su cocina */
+                "autoLoad": true,
+                "compass": false, /* Quitamos la brújula para un diseño más limpio */
+                "showZoomCtrl": false /* Quitamos los botones de zoom para que sea más inmersivo */
+            });
+        }
+    </script>
 </body>
 </html>
