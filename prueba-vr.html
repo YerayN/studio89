@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Realidad Virtual 360</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        
+        /* Esta es la caja del visor 360 */
+        #visor-360 {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            border: 5px solid #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Prueba en 360º</h2>
+    <p>Haz clic y arrastra el ratón (o usa el dedo en el móvil) para mirar alrededor.</p>
+
+    <div id="visor-360"></div>
+
+    <script>
+        // Le decimos a Pannellum que use la caja 'visor-360'
+        pannellum.viewer('visor-360', {
+            "type": "equirectangular", // Esto significa "foto 360 aplastada"
+            "panorama": "https://pannellum.org/images/alma.jpg", // ¡La foto de prueba!
+            "autoLoad": true // Para que cargue sola sin tener que darle al "Play"
+        });
+    </script>
+
+</body>
+</html>

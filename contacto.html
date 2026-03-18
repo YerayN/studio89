@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Studio 89</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Logo Studio 89" class="logo-img">
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-interior">
+        <div class="contenedor text-center">
+            <h1>Hablemos</h1>
+            <p>¿Tienes un proyecto en mente o necesitas que te acompañe en tu proceso? Escríbeme.</p>
+        </div>
+    </section>
+
+    <section class="seccion-contacto contenedor">
+        
+        <div class="contacto-info">
+            <h2>¡Trabajemos juntos!</h2>
+            <p>Si prefieres el trato directo, aquí tienes mis datos. Estaré encantada de escucharte y empezar a darle forma a tus ideas.</p>
+            
+            <ul class="lista-datos">
+                <li><strong>Teléfono:</strong> <a href="tel:+34722286608">+34 722 286 608</a></li>
+                <li><strong>Email:</strong> <a href="mailto:studio89.es@gmail.com">studio89.es@gmail.com</a></li>
+                <li><strong>Ubicación:</strong> Mutxamel - Alicante / España</li>
+            </ul>
+
+            <div class="redes-sociales">
+                <p><strong>Sígueme en:</strong></p>
+                <a href="#" class="enlace-red">Instagram</a> | 
+                <a href="#" class="enlace-red">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="contacto-formulario">
+            <form action="#" method="POST" class="formulario">
+                
+                <div class="grupo-input">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensaje">Comentario o mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame un poco sobre tu proyecto..."></textarea>
+                </div>
+
+                <div class="grupo-checkbox">
+                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                    <label for="rgpd">Doy mi consentimiento para que esta web almacene mi información para responder a mi petición. *</label>
+                </div>
+
+                <button type="submit" class="boton-principal w-100">Enviar Mensaje</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <p>Soy Yvett, Mentora y Fundadora de Studio 89. Mi misión es acompañarte en tu proceso de cambio, sin perder nunca de vista tu paz mental.</p>
+            <p>&copy; 2026 Studio 89. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
